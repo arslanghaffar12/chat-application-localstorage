@@ -1,0 +1,201 @@
+:root {
+
+  --primary-dark: #504190;
+  --primary: #6f5cc4;
+  --primary-text: #969fb0;
+  --primary-text-light: #c6cbd4;
+  --primary-text-dark: #334666;
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.login-container {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.center-page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name {
+
+  color: var(--primary-text-dark) !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#style-3::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #fff;
+  background-color: #dee2e6;
+}
+
+#style-3::-webkit-scrollbar {
+  width: 3px !important;
+  background-color: #dee2e6 !important;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+  background-color: #dee2e6;
+}
+
+.my-chat {
+
+  color: var(--primary-text-dark) !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.chat-card {
+  height: 80vh !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #f0f0f0 !important;
+  border-color: #e6e8ed !important;
+  height: 72px;
+}
+
+.user-chat {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  /* Smooth background color transition */
+  width: 100%;
+}
+
+.user-chat:hover {
+  background-color: #f0f0f0;
+}
+
+.chat-input {
+  width: calc(80% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+  font-size: 16px;
+  min-height: 2lh;
+  max-height: 7lh;
+  resize: none;
+}
+
+.chat-input::placeholder {
+  color: #999;
+}
+
+.chat-footer .chat-input {
+  width: calc(100% - 20px);
+  /* Adjusted width for the footer */
+  min-height: 20px;
+  /* Adjusted minimum height for the footer */
+}
+
+.chat-input:focus {
+  border-color: var(--primary);
+  /* Example color change on focus */
+  box-shadow: 0 0 5px var(--primary-dark);
+  /* Example box shadow on focus */
+}
+
+.user-chat:active {
+  /* Optional styles for active state */
+  opacity: 0.8;
+  /* Slight transparency on click/tap */
+}
+
+.chat-footer {
+  background-color: #fff !important;
+  border-color: #e6e8ed !important;
+  /* display: flex;
+  align-items: center;
+  padding: 0.5rem; */
+  /* height: 65px !important; */
+}
+
+.totalCenter {
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.left-message {
+  background-color: #e6e8ed;
+  margin-right: auto;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 90%;
+}
+
+.right-message {
+  background-color: var(--primary);
+  margin-left: auto;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 90%;
+
+}
+
+.message-content {
+  padding: 8px;
+}
+
+.message-timestamp {
+  font-size: 8px !important;
+  margin-left: auto;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.typing-indicator {
+  color: #888;
+  /* Use a color that suits your design */
+  font-size: 12px;
+  margin: 4px 0 0;
+  /* Adjust the margin as needed */
+}
